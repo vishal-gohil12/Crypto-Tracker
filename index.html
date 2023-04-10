@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cryptocurrency Tracker</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+	
+<nav>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Cryptocurrencies</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#loginPageBtn" id="loginPageBtn">Login Page</a></li>
+  </ul>
+</nav>
+
+	<div class="container">
+		<h1>Cryptocurrency Tracker</h1>
+		<div class="crypto-container">
+			<div class="crypto-list">
+				<h2>Top 50 Cryptocurrencies</h2>
+				<ul id="crypto-list"></ul>
+			</div>
+			<div class="crypto-graph">
+				<h2>Price Graph</h2>
+				<canvas id="myChart"></canvas>
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1b1c24; /* dark background */
+  color: #fff; /* white text */
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 100px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+  font-size: 36px;
+}
+
+#crypto-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#crypto-list li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: #2b2c36; /* darker card background */
+}
+
+#crypto-list li:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#crypto-list li img {
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 2px solid #fff; /* white border */
+  width: 50px;
+  height: 50px;
+}
+
+#crypto-list li span {
+  font-size: 18px;
+}
+
+canvas {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  #crypto-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #crypto-list li {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+nav {
+  background-color: #1b1c24; /* nav bar background color */
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 50px;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: #fff; /* nav bar text color */
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+
+nav li.right {
+  float: right;
+}
